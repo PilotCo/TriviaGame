@@ -1,0 +1,95 @@
+body{
+	text-align:center;
+	background-image: url('http://www.switchbacktravel.com/sites/default/files/images/articles/Colorado%20Outdoors.jpg');
+	background-color: grey;
+	font-family: 'Roboto', sans-serif;
+
+}
+#header{
+	color:white;
+	text-align: center;
+	
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-bottom: solid black 5px;
+}
+
+#title{
+	border:solid black;
+	border-left: 10px;
+	border-right: 10px;
+	background-color: black;
+
+}
+
+.questionImage{
+	width:300px;
+	padding-top: 15px;
+
+}
+
+#begin{
+
+	margin-right:25%;
+	color:white;
+	margin-left: 25%;
+	background:black;
+	padding-bottom: 15px
+
+}
+
+#firstMessage{
+	padding-top: 15px;
+}
+
+#informationBox{
+	background-image: url("https://southernafrican.news/wp-content/uploads/2016/07/campfire.jpg");
+	display:hidden;
+	text-align:center;
+	color:white;
+	margin-left:25%;
+	margin-right:25%;
+	height:475px;
+	margin-top: 20px;
+	border: solid black;
+	background-color:#cceeff;
+}
+
+#timer{
+	margin-top:15px;
+}
+
+#question{
+	border-bottom: solid white;
+	margin-top:20px;
+	margin-bottom: 15px
+	margin-left:10px;
+	margin-right: 10px;
+}
+
+#answer0{
+	margin-top:20px;
+}
+.answer:hover{
+	background-color:white;
+	color:black;
+}
+
+#scoreUpdate{
+	margin-right: 5px;
+	margin-left:5px;
+}
+
+#score{
+	background:black;
+}
+
+#lastMessage{
+	margin-bottom: 20px;
+}
+
+.button{
+	color:white;
+	border:solid white;
+	background: black;
+}

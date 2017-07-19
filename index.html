@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Outdoorsman's Quiz</title>
+	<link rel="stylesheet" type="text/css" href="assets\css\style.css">
+
+	<!-- JQuery link courtesy of google-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- font link -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body>
+	<div id="header">
+		<h1 id="title">Outdoorsman's Quiz</h1>
+	</div>
+
+	<div id="begin">
+		<p id="firstMessage">Click here to test your knowledge of the great outdoors.</p>
+		<button id="beginButton" class="button" onclick="setup()">Begin</button>
+	</div>
+
+	<div id="informationBox">
+
+		<div id="timer">
+			
+		</div>
+
+		<div id="question">
+
+		</div>
+
+		<div id="answers" class="answers">
+			<p id="answer0" class="answer" onclick="answerClick(this.innerHTML)"></p>
+			<p id="answer1" class="answer" onclick="answerClick(this.innerHTML)"></p>
+			<p id="answer2" class="answer" onclick="answerClick(this.innerHTML)"></p>
+			<p id="answer3" class="answer" onclick="answerClick(this.innerHTML)"></p>
+		</div>
+
+		<div id="scoreUpdate"></div>
+
+		<div id="answerPicture">
+			
+		</div>
+
+		<div id="score">
+			<p id="wins"></p>
+			<p id="losses"></p>
+			<p id="timeOuts"></p>
+		</div>
+
+		<div id="lastMessage"></div>
+		<button id="endButton" class="button" onclick="setup()">Try Again</button>
+		
+
+		</div>
+	</div>
+
+</body>
+
+<script src="assets\javascript\app.js"></script>
+
+</html>
