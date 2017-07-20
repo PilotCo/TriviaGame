@@ -30,7 +30,7 @@ var questions = [
 	,{	verbiage: "How fast (on average) can a black bear run?"
 	,	answers: ["35 MPH", "20 MPH", "25 MPH", "40 MPH"]
 	,	picture: "assets/images/blackBear.jpg"
-	,	response: "Black bears can run 35 MPH, don't expect to outrun one. They also don't always look this adorable."
+	,	response: "Black bears can run 35 MPH, don't expect to outrun one. They are also usually bigger than this little guy."
 	,}
 	//question 4
 	,{	verbiage: "What is the name of the knot used to tie a climber?"
@@ -40,33 +40,39 @@ var questions = [
 	,}
 	//question 5
 	,{	verbiage: "Where do you want most of the weight in your backpack?"
-	,	answers:["The middle of your backpack, close to your back", "The bottom of your backpack", "The brain, or top, of your backpack", "In the side pockets of your backpack"]
+	,	answers: ["The middle of your backpack, close to your back", "The bottom of your backpack", "The brain, or top, of your backpack", "In the side pockets of your backpack"]
 	,	picture: "assets/images/backpack.jpg"
 	,	response: "You want the weight evenly distributed in the middle of the pack and close to your back."
 	,}
 	//question 6
 	,{	verbiage: "How many times can a woodpecker strike their beaks against the wall in 1 second?"
-	,	answers:["20 times", "10 times", "Just one", "15 times"]
+	,	answers: ["20 times", "10 times", "Just one", "15 times"]
 	,	picture: "assets/images/woodpecker.jpg"
 	,	response: "20 times! No excuses next time you complain about a headache."
 	,}
 	//question 7
 	,{	verbiage: "What is Polaris?"
-	,	answers:["The North Star", "The starting point of a river", "A renowned backpack dealer", "The tallest mountain in Argentina"]
+	,	answers: ["The North Star", "The starting point of a river", "A renowned backpack dealer", "The tallest mountain in Argentina"]
 	,	picture: "assets/images/polaris.jpg"
 	,	response: "This is the North Star. Part of the Little Dipper and pointed at by the Big Dipper."
 	,}
 	//question 8
 	,{	verbiage: "Which of these will not help you determine directions?"
-	,	answers:["Wind", "The stars", "Moss", "The sun"]
+	,	answers: ["Wind", "The stars", "Moss", "The sun"]
 	,	picture: "assets/images/wind.jpg"
 	,	response: "Wind can change direction in an instance, that will definitely not help you with your directions."
 	,}
 	//question 9
 	,{	verbiage: "What is the height of Mt. Everest?"
-	,	answers:["29,029 ft", "25,400 ft", "35,009 ft", "20,000 ft"]
+	,	answers: ["29,029 ft", "25,400 ft", "35,009 ft", "20,000 ft"]
 	,	picture: "assets/images/everest.jpg"
 	,	response: "29,029 ft, Mt. Everest is really freaking tall."
+	,}
+	//question 10
+	,{	verbiage: "How much wood could a woodchuck chuck if a woodchuck could chuck wood?"
+	,	answers: ["This is a stupid question", "15 pieces", "One whole bushel", "Around a liter"]
+	,	picture: "assets/images/woodchuck.jpg"
+	,	response: "This is a really stupid question."
 	,}
 ];
 
@@ -158,7 +164,7 @@ function scorePageTimer(){
 	time--;
 	if(time < 1){
 		clearInterval(timer);
-		if(round === 7){
+		if(round === 10){
 			endGameScreen();
 		}else{
 			nextQuestion();
